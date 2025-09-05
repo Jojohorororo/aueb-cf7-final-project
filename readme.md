@@ -102,7 +102,7 @@ video-club/
 1. **Navigate to backend directory:**
    ```bash
    cd c:/
-   C:\aueb-cf7-final-project-main\backend\videoclub
+   cd C:\aueb-cf7-final-project-main\backend\videoclub
    ```
 
 2. **Configure database connection** in `src/main/resources/application.yml`:
@@ -121,30 +121,28 @@ video-club/
    ```
 
 3. **Build and run the application:**
+   download maven from here: https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip
+   unzip content inside c:\ and rename folder to `maven`
+
    ```bash
    # Build the project
-   mvn clean compile
+   C:\maven\bin\mvn clean compile
    
    # Run the application
-   mvn spring-boot:run
+   C:\maven\bin\mvn spring-boot:run
    ```
 
-   **Alternative - Create JAR file:**
-   ```bash
-   mvn clean package
-   java -jar target/video-club-backend-0.0.1-SNAPSHOT.jar
-   ```
 
 4. **Verify backend is running:**
    - Backend API: `http://localhost:9090`
    - Swagger Documentation: `http://localhost:9090/swagger-ui.html`
-   - API Docs: `http://localhost:9090/api-docs`
+
 
 ### Frontend Deployment
 
 1. **Navigate to project directory (video-club-frontend):**
    ```bash
-   cd frontend\video-club-frontend
+   cd C:\aueb-cf7-final-project-main\frontend\video-club-frontend
    ```
 
 2. **Install dependencies:**
@@ -162,22 +160,6 @@ video-club/
 
 5. **Access the application:**
    - Frontend: `http://localhost:3000`
-
-### Production Build
-
-**Backend:**
-```bash
-cd backend
-mvn clean package
-java -jar target/video-club-backend-0.0.1-SNAPSHOT.jar
-```
-
-**Frontend:**
-```bash
-cd frontend
-npm run build
-# Deploy the contents of the 'build' folder to your web server
-```
 
 ## Usage Instructions
 
@@ -262,6 +244,7 @@ Developed as part of AUEB coursework - Full Stack Web Development
 ## License
 
 
-Educational project - not for commercial use
+Educational project - use at your own risk
+
 
 
