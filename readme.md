@@ -54,7 +54,7 @@ video-club/
 │   │   ├── security/          # Security configuration & JWT
 │   │   └── config/            # Application configuration
 │   ├── src/main/resources/
-│   │   └── application.properties  # Configuration file
+│   │   └── application.yml  # Configuration file
 │   └── pom.xml               # Maven dependencies
 ├── frontend/                 # React application
 │   ├── src/
@@ -93,7 +93,7 @@ video-club/
    cd backend
    ```
 
-2. **Configure database connection** in `src/main/resources/application.properties`:
+2. **Configure database connection** in `src/main/resources/application.yml`:
    ```properties
    spring.datasource.url=jdbc:mysql://localhost:3306/video_club?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
    spring.datasource.username=root
@@ -250,3 +250,4 @@ Developed as part of AUEB coursework - Full Stack Web Development
 
 
 Educational project - not for commercial use
+
