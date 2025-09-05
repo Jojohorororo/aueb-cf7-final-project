@@ -21,6 +21,11 @@ A full-stack web application for managing movie collections with user authentica
 ### Database
 - **MySQL 8.0+**
 
+### Download
+- download everything on C:/ for easier-faster deployment
+- link: https://github.com/Jojohorororo/aueb-cf7-final-project/archive/refs/heads/main.zip
+- unzip everything in c:/aueb-cf7-final-project-main
+
 ## Features
 
 ### Authentication & Security
@@ -85,15 +90,23 @@ video-club/
    ```
 
 3. **Tables will be created automatically** by Hibernate on first run
+   ** if not you will have to execute this file using navicat, HeidiSQL or with mysql command line
+   C:\aueb-cf7-final-project-main\database-schema.sql
+
+   example of mysql command
+   ```bash
+   mysql -u username -p database_name < C:\aueb-cf7-final-project-main\database-schema.sql
 
 ### Backend Deployment
 
 1. **Navigate to backend directory:**
    ```bash
-   cd backend
+   cd c:/
+   C:\aueb-cf7-final-project-main\backend\videoclub
    ```
 
 2. **Configure database connection** in `src/main/resources/application.yml`:
+   you might need to change your database password only, replace (your_mysql_password)
    ```properties
    spring.datasource.url=jdbc:mysql://localhost:3306/video_club?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
    spring.datasource.username=root
@@ -250,4 +263,5 @@ Developed as part of AUEB coursework - Full Stack Web Development
 
 
 Educational project - not for commercial use
+
 
