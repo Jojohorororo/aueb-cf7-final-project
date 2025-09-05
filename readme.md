@@ -129,9 +129,9 @@ video-club/
 
 ### Frontend Deployment
 
-1. **Navigate to frontend directory:**
+1. **Navigate to project directory (video-club-frontend):**
    ```bash
-   cd frontend
+   cd frontend\video-club-frontend
    ```
 
 2. **Install dependencies:**
@@ -225,7 +225,7 @@ After manual setup:
 
 1. **Database Connection Error:**
    - Verify MySQL is running
-   - Check credentials in `application.properties`
+   - Check credentials in `application.yml`
    - Ensure database exists
 
 2. **Port Conflicts:**
@@ -247,5 +247,6 @@ After manual setup:
 Developed as part of AUEB coursework - Full Stack Web Development
 
 ## License
+
 
 Educational project - not for commercial use
